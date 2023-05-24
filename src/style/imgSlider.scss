@@ -1,0 +1,38 @@
+@import './tamplateColor.scss';
+
+.slide_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    padding-bottom: 50px;
+}
+
+.main_img{
+    img{
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    }
+}
+
+.second_photo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    img{
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 8px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+        &:hover{
+            border: 1px solid $color_text_disab;
+        }
+    }
+}
+
+.img_active{
+    border: 1px solid $color_prime;
+}

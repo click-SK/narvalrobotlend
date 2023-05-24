@@ -1,0 +1,95 @@
+@import './tamplateColor.scss';
+
+@font-face {
+    font-family: 'HarmonyOS_Sans';
+    src: url('../../public/fonts/harmonyos-sans/HarmonyOS_Sans_Regular.ttf');
+    /* додаткові формати шрифту */
+  }
+
+  .description{
+    display: flex;
+    width: 100%;
+    padding-top: 100px;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+
+    title{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        padding: 20px 0;
+        h2{
+            width: 100%;
+            text-align: center;
+            height: 40px;
+            // background: #e6e6e6;
+            color: $color_prime;
+            font-family: 'HarmonyOS_Sans', sans-serif;  
+            font-size: 40px;
+            padding: 20px 0;
+        }
+    }
+  }
+
+  .goods_item{
+    position: relative;
+    
+    img{
+        width: 100%;
+    }
+  }
+
+  .goods_tittle{
+    position: absolute;
+    width: 520px;
+    left: 20%;
+    top: 40%;
+    h3{
+        font-family: 'HarmonyOS_Sans', sans-serif;  
+        font-size: 68px;
+        line-height: 1.3;
+    }
+    p{
+        font-size: 18px;
+        padding-top: 30px;
+        width: 60%;
+        line-height: 1.5;
+    }
+  }
+
+
+  .second_block{
+    
+    .goods_tittle{
+        left: 20%;
+        top: 20%;
+    }
+  }
+  .p_block_two{
+    width: 80% !important;
+  }
+
+
+  .third_block{
+    .goods_tittle{
+        left: 20%;
+        top: 20%;
+    }
+  }
+
+  .fourth_block{
+    .goods_tittle{
+        left: 10%;
+        top: 10%;
+    }
+  }
+
+
+  .fifth_block{
+    .goods_tittle{
+        left: 10%;
+        top: 10%;
+    }
+  }
+
