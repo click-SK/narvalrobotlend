@@ -1,6 +1,7 @@
 import React from 'react';
 import ImgGoodsBanner from './ImgGoodsBanner';
 import DescriptionGoods from './DescriptionGoods';
+import Reviews from './Reviews';
 import '../../style/bodyPage.scss'
 
 const BodyPage = () => {
@@ -11,7 +12,7 @@ const BodyPage = () => {
                 <title>
                     <h2>Birthday Sale</h2>
                 <p>Our shop is 5 years old! In honor of this, we have prepared a gift. Wee have prepared 50 vacuum cleaners for the price of only 2E! One person can only buy one vacuum cleaner.</p>
-                <a href="#">More</a>
+                <a href="#" className='left'>More</a>
                 <a href="#"><button>Buy Now</button></a>
                 </title>
                 <img src=".\img\block_sell.png" alt="" />
@@ -65,6 +66,7 @@ const BodyPage = () => {
 
             </div>
             <DescriptionGoods/>
+            <Reviews/>
         </div>
     );
 };

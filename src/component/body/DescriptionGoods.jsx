@@ -29,6 +29,7 @@ const DescriptionGoods = () => {
                 </div>
                 <img src="./img/descript/3_f3da15bc-6a56-44e5-a324-677e53dad667_2400x.webp" alt="" />
             </div>
+            <a href="https://shop.narwal.com/products/narwal-freo"><button >Buy now</button></a>
             <div className='goods_item fourth_block '>
                 <div className='goods_tittle'>
                 <h3 className='pos_absolute'>7N wood flooring</h3>
@@ -43,6 +44,52 @@ const DescriptionGoods = () => {
                 </div>
                 <img src="./img/descript/5_632d24ee-055f-4b9a-bfea-d4a87f829eae_2400x.webp" alt="" />
             </div>
+            <div className='goods_item video_block '>
+                <h3>Freo vs. Other Robot</h3>
+                <video 
+                // controls 
+                loop 
+                muted
+                autoPlay>
+                <source src="./video/vs.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div className='goods_item specifications'>
+                <h3 className=''>Specifications</h3>
+                <div className='specifications_tabl'>
+                    <div className='tabl_item'>
+                        <h4>Robot</h4>
+                        <ul>
+                            <li>Dimensions: 350 (W) *351.5 (L) *106 (H) mm</li>
+                            <li>Color: White</li>
+                            <li>Weight: Approx. 4.35kg</li>
+                            <li>Battery: ≥5200mAh</li>
+                            <li>Rated voltage: 14.4V</li>
+                            <li>Rated power: 45W</li>
+                        </ul>
+                    </div>
+                    <div className='tabl_item'>
+                        <h4>Base station</h4>
+                        <ul>
+                            <li>Dimensions: 370 (W) *415(L) *435(H) mm</li>
+                            <li>Color: White</li>
+                            <li>Weight: Approx. 8.75kg</li>
+                            <li>Rated input: 100-240V~</li>
+                            <li>Rated output: 20V 3.0A</li>
+                            <li>Rated frequency: 50/60Hz</li>
+                            <li>Rated power: 72W</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div className='goods_item fifth_block specifications '>
+                <h3 className='pos_absolute'>What's in the Box</h3>
+                <img src="./img/descript/0915-_-PC_1920x.webp" alt="" />
+            </div>
+            <a href="https://shop.narwal.com/products/narwal-freo"><button >Buy now</button></a>
+
         </div>
     );
 };
