@@ -27,7 +27,7 @@ const BodyPage = () => {
             <div className='head_goods'>
             <div className='body_wrap_item block_sell'>
                 <title>
-                    <h2>Birthday Sale</h2>
+                    <h2 className='title_first'>Birthday Sale</h2>
                 <p>Our shop is 5 years old! In honor of this, we have prepared a gift. Wee have prepared 50 vacuum cleaners for the price of only 2E! One person can only buy one vacuum cleaner.</p>
                 <a href="#" className='left'>More</a>
                 <a href="#"><button>Buy Now</button></a>

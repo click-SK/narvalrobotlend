@@ -1,20 +1,46 @@
 import React from 'react';
+import { motion } from "framer-motion"
 import '../../style/descriptionPage.scss'
 
 const DescriptionGoods = () => {
 
 
+    const animation={
+        hidden: {
+            y:-100,
+            opacity: 0,
+        },
+        visible:custom =>({
+            y:0,
+            opacity: 1,
+            transition:{ delay: custom * 0.2},
+        })
+    }
+
 
     return (
-        <div className='description'>
+        <motion.div
+            initial='hidden'
+            whileInView='visible'
+            className='description'
+            viewport={{ amount: 0.5 }}
+         >
             <title>
                 <h2>FreoMode</h2>
             </title>
             <div className='goods_item first_block'>
                 <div className='goods_tittle'>
-                <h3>You are all set. Freo a clean day.</h3>
-                <p>The brand-new versatile cleaning robot
-                    innovated by Narwal.</p>
+                <motion.h3
+                    custom={1}
+                    variants={animation}
+                >
+                    You are all set. Freo a clean day.
+                </motion.h3>
+                <motion.p
+                custom={2}
+                variants={animation}
+                >The brand-new versatile cleaning robot
+                    innovated by Narwal.</motion.p>
                 </div>
                 <img src="./img/descript/1_e1aa879b-bf30-47a3-be0e-2f9f0ea1159e_2400x.webp" alt="" />
             </div>
@@ -103,7 +129,7 @@ const DescriptionGoods = () => {
             </div>
             <a href="https://shop.narwal.com/products/narwal-freo"><button >Buy now</button></a>
 
-        </div>
+        </motion.div>
     );
 };
 
