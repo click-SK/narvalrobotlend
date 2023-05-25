@@ -41,6 +41,7 @@
             font-family: 'HarmonyOS_Sans', sans-serif;
             line-height: 1.5;
             padding-bottom: 15px;
+            width: 90%;
         }
         a{
             padding-bottom: 20px;
@@ -67,13 +68,14 @@
 
     }
     img{
-        width: 40%; 
+        width: auto; 
         
     }
   }
 
 .block_buy{
     display: flex;
+    justify-content: center;
     
 }
 
@@ -226,6 +228,9 @@
         padding-bottom: 25px;
         position: relative;
         border-bottom: 1px solid $color_text_disab;
+        img{
+            margin-right: 10px;
+        }
     }
 
     .delivery{
@@ -246,4 +251,346 @@
 }
 
 
+@media (max-width: 1000px){
+    .block_sell{
+        flex-direction: column;
+        justify-content: center;
+        title{
+            width: 100%;
+            h2{
 
+            }
+            p{
+
+            }
+            a{
+
+                padding: 10px 0;
+                
+                button{
+                    width: 80%;
+                    margin-bottom: 10px;
+                    &:hover{
+
+                    }
+                    &:active {
+                        
+                      }
+                }
+            }
+    
+        }
+        img{
+            width: auto; 
+            
+        }
+      }
+    .title_price_wrap{
+        padding: 0 20px;
+        h1{
+            font-size: 30px;
+        }
+    }
+
+    .second_photo{
+        img{
+            
+            width: 80px;
+        }
+    }
+}
+
+
+@media (max-width: 950px){
+
+    
+    .second_photo{
+        img{
+            
+            width: 60px;
+        }
+    }
+    .title_price_wrap{
+        h1{
+            font-size: 27px;
+        }
+    }
+
+    .star {
+        img {
+        width: 10px;
+        }
+    }
+
+    .reviews{
+        font-size: 12px;
+    }
+    .ask{
+         img{
+            width: 12px;
+         }
+         p{
+            font-size: 12px;
+         }
+    }
+
+    .price{
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 850px){
+    .title_price_wrap{
+        h1{
+            font-size: 22px;
+        }
+    }
+
+    .star {
+        img {
+        width: 8px;
+        }
+    }
+
+    .reviews{
+        font-size: 10px;
+    }
+    .ask{
+         img{
+            width: 10px;
+         }
+         p{
+            font-size: 12px;
+         }
+    }
+}
+
+
+@media (max-width: 722px){
+
+    .block_sell{
+        title  {
+            h2 {
+            font-size: 30px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .title_price_wrap{
+        h1{
+            font-size: 18px;
+        }
+    }
+
+    .price_title{
+        font-size: 12px;
+    }
+
+    .star {
+        img {
+        width: 6px;
+        }
+    }
+
+    .reviews{
+        font-size: 9px;
+    }
+
+    .ask{
+        img{
+           width: 8px;
+        }
+        p{
+           font-size: 9px;
+        }
+   }
+
+   .slide_wrap {
+    padding-bottom: 25px;
+    }
+    .reviews_wrap {
+        padding-bottom: 15px;
+    }
+    .descript{
+        padding-top: 25px;
+        li {
+            width: 33%;
+            height: 32px;
+            display: flex;
+            margin: 5px;
+        }
+    }
+    .second_photo{
+        img{
+            
+            width: 50px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .block_sell{
+        padding-bottom: 50px;
+    }
+    .block_buy {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner_wrap{
+        width: 100%;
+    }
+    .second_photo{
+        img{
+            width: 80px;
+        }
+    }
+
+    .descript{ 
+        width: 80%;
+        padding: 25px 0;
+        li {
+        width: 31%;
+        height: 32px;
+        display: flex;
+        margin: 5px;
+    }}
+
+    .title_price_wrap {
+        width: 80%;
+        padding-top: 20px;
+        h1{
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+    .reviews_wrap{
+        width: 100%;
+        justify-content: center;
+        .star{
+            img{
+                width: 12px;
+            }
+        }
+        .reviews{
+            font-size: 14px;
+        }
+        .ask{
+            img{
+                width: 12px;
+            }
+            p{
+                font-size: 14px;  
+            }
+        }
+    }
+
+    .price_wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .price{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .pay {
+        display: flex;
+        padding-bottom: 25px;
+        position: relative;
+        border-bottom: 1px solid #999999;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pay_deliv .delivery {
+        margin-top: 25px;
+        display: flex;
+    }
+}
+
+@media (max-width: 510px){
+    .block_sell{
+
+    }
+    .block_buy {
+
+    }
+    .banner_wrap{
+
+    }
+    .second_photo{
+        img{
+            width: 50px;
+        }
+    }
+
+    .descript{ 
+
+        li {
+
+    }}
+
+    .title_price_wrap {
+
+        h1{
+
+        }
+    }
+
+    .reviews_wrap{
+
+        .star{
+            img{
+
+            }
+        }
+        .reviews{
+
+        }
+        .ask{
+            img{
+
+            }
+            p{
+
+            }
+        }
+    }
+
+    .price_wrap{
+        .price_title{
+            width: 50%;
+        }
+
+        .price{
+
+        }
+    }
+    .pay {
+
+    }
+
+    .pay_deliv .delivery {
+
+    }
+}
+
+@media (max-width: 350px){
+    .block_sell{
+        title{
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            .left{
+                text-align: center;
+            }
+        }
+    }
+}

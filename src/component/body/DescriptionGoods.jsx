@@ -2,6 +2,9 @@ import React from 'react';
 import '../../style/descriptionPage.scss'
 
 const DescriptionGoods = () => {
+
+
+
     return (
         <div className='description'>
             <title>
@@ -31,19 +34,29 @@ const DescriptionGoods = () => {
             </div>
             <a href="https://shop.narwal.com/products/narwal-freo"><button >Buy now</button></a>
             <div className='goods_item fourth_block '>
-                <div className='goods_tittle'>
-                <h3 className='pos_absolute'>7N wood flooring</h3>
-                <p className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</p>
+                <div className='goods_tittle pos_absolute mod'>
+                    <div className='block_left'>
+                    <h3 className=''>Flooring Identification</h3>
+                    <p className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</p>
+                    </div>
+                    <div className='block_right'>
+                    <h3 >7N wood flooring </h3>
+                    </div>
                 </div>
                 <img src="./img/descript/4_8e21be93-8b49-4754-a3b5-ac286ef7cb01_2400x.webp" alt="" />
             </div>
             <div className='goods_item fifth_block '>
-                <div className='goods_tittle'>
-                <h3 className='pos_absolute'>12N tile flooring</h3>
-                <p className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</p>
+                <div className='goods_tittle pos_absolute mod '>
+                        <div className='block_left'>
+                        <h3 className=''>Flooring Identification</h3>
+                    <p className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</p>
+                        </div>
+                        <div className='block_right'>
+                        <h3 >12N tile flooring</h3>
+                        </div>
+                    </div>
+                    <img src="./img/descript/5_632d24ee-055f-4b9a-bfea-d4a87f829eae_2400x.webp" alt="" />
                 </div>
-                <img src="./img/descript/5_632d24ee-055f-4b9a-bfea-d4a87f829eae_2400x.webp" alt="" />
-            </div>
             <div className='goods_item video_block '>
                 <h3>Freo vs. Other Robot</h3>
                 <video 

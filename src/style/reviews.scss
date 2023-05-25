@@ -96,3 +96,97 @@
         margin: 10px 10px 0 0;
     }
 }
+
+
+
+@media (max-width: 1400px){
+
+}
+
+@media (max-width: 1200px){
+
+}
+@media (max-width: 1000px){
+
+
+
+
+}
+
+
+@media (max-width: 950px){
+
+}
+
+@media (max-width: 750px){
+
+
+    .reviews_section {
+        h2 {
+        padding: 20px;
+        }
+        h5{
+            font-size: 18px;
+            margin:10px 0 0 0 ;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    
+
+    .title_rev {
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+        .avatar{
+            height: 100px;
+            width: 100px;
+            font-size: 40px;
+            margin-right: 20px;
+        }
+        .name_wrap{
+            width: 60%;
+            .rate_wrap{
+                width: 100%;
+                
+                .star{
+                    margin-right: 12px;
+                    display: flex;
+                    img{
+                        width: 12px;
+                    }
+                }
+            }
+            .name{
+                font-size: 30px;
+            }
+        }
+    }
+
+
+
+    
+}
+
+
+@media (max-width: 680px){
+
+}
+
+@media (max-width: 510px){
+
+}
+
+@media (max-width: 370px){
+    
+    .title_rev {
+        .avatar{
+            height: 60px;
+            width: 60px;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+    }
+}
