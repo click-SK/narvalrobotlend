@@ -7,82 +7,153 @@ const DescriptionGoods = () => {
 
     const animation={
         hidden: {
-            y:-100,
+            y:100,
             opacity: 0,
         },
         visible:custom =>({
             y:0,
             opacity: 1,
-            transition:{ delay: custom * 0.2},
+            transition:{ 
+                delay: custom * 0.2,
+                duration: 0.5
+            },
         })
     }
+    // const animationImg={
+    //     hidden: {
+    //         opacity: 0,
+    //     },
+    //     visible: {
+    //         opacity: 1,
+    //     }
+    // }
+    // const animationImg2={
+    //     hidden: {
+    //         opacity: 1,
+    //     },
+    //     visible: {
+    //         opacity: 0,
+    //     }
+    // }
 
 
     return (
-        <motion.div
-            initial='hidden'
-            whileInView='visible'
+        <div
+            
             className='description'
-            viewport={{ amount: 0.5 }}
          >
             <title>
                 <h2>FreoMode</h2>
             </title>
-            <div className='goods_item first_block'>
+            <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{amount:0.3}}
+            className='goods_item first_block'>
                 <div className='goods_tittle'>
                 <motion.h3
-                    custom={1}
+                    custom={3}
                     variants={animation}
                 >
                     You are all set. Freo a clean day.
                 </motion.h3>
                 <motion.p
-                custom={2}
+                custom={5}
                 variants={animation}
                 >The brand-new versatile cleaning robot
                     innovated by Narwal.</motion.p>
                 </div>
                 <img src="./img/descript/1_e1aa879b-bf30-47a3-be0e-2f9f0ea1159e_2400x.webp" alt="" />
-            </div>
-            <div className='goods_item second_block '>
+            </motion.div>
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{amount:0.3}}
+            className='goods_item second_block '>
                 <div className='goods_tittle'>
-                <h3>Self Detect Self Clean</h3>
-                <p className='p_block_two'>Freo intelligently detects how dirty the mops are and sanitizes them in a high-speed spinning, using the exact amount of water mixed with the scientifically designated ratio of Narwal's exclusive formulated floor cleaner. </p>
+                <motion.h3
+                custom={3}
+                variants={animation}
+                >Self Detect Self Clean</motion.h3>
+                <motion.p
+                 custom={5}
+                 variants={animation}
+                 className='p_block_two'
+                 >Freo intelligently detects how dirty the mops are and sanitizes them in a high-speed spinning, using the exact amount of water mixed with the scientifically designated ratio of Narwal's exclusive formulated floor cleaner. </motion.p>
                 </div>
                 <img src="./img/descript/2_d1979953-d687-4b52-82db-0e001fcd12c2_2400x.webp" alt="" />
-            </div>
-            <div className='goods_item third_block '>
+            </motion.div>
+            <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{amount:0.3}}
+             className='goods_item third_block '>
                 <div className='goods_tittle'>
-                <h3>Spontaneous Cleaning Logic</h3>
-                <p className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</p>
+                <motion.h3
+                custom={3}
+                variants={animation}
+                >
+                    Spontaneous Cleaning Logic</motion.h3>
+                <motion.p
+                custom={5}
+                variants={animation}
+                 className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</motion.p>
                 </div>
                 <img src="./img/descript/3_f3da15bc-6a56-44e5-a324-677e53dad667_2400x.webp" alt="" />
-            </div>
+            </motion.div>
             <a href="https://shop.narwal.com/products/narwal-freo"><button >Buy now</button></a>
-            <div className='goods_item fourth_block '>
+            <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{amount:0.3}}
+             className='goods_item fourth_block '>
                 <div className='goods_tittle pos_absolute mod'>
                     <div className='block_left'>
-                    <h3 className=''>Flooring Identification</h3>
-                    <p className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</p>
+                    <motion.h3
+                     custom={3}
+                     variants={animation}
+                     className=''>Flooring Identification</motion.h3>
+                    <motion.p 
+                    custom={5}
+                    variants={animation}
+                    className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</motion.p>
                     </div>
                     <div className='block_right'>
-                    <h3 >7N wood flooring </h3>
+                    <motion.h3
+                    custom={8}
+                    variants={animation}
+                        >7N wood flooring </motion.h3>
                     </div>
                 </div>
-                <img src="./img/descript/4_8e21be93-8b49-4754-a3b5-ac286ef7cb01_2400x.webp" alt="" />
-            </div>
-            <div className='goods_item fifth_block '>
+                <motion.img 
+                src="./img/descript/4_8e21be93-8b49-4754-a3b5-ac286ef7cb01_2400x.webp" alt="" />
+            </motion.div>
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{amount:0.3}}
+            className='goods_item fifth_block '>
                 <div className='goods_tittle pos_absolute mod '>
                         <div className='block_left'>
-                        <h3 className=''>Flooring Identification</h3>
-                    <p className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</p>
+                        <motion.h3
+                        // custom={3}
+                        // variants={animation}
+                        className=''>Flooring Identification</motion.h3>
+                        <motion.p
+                        // custom={5}
+                        // variants={animation}
+                        className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</motion.p>
                         </div>
                         <div className='block_right'>
-                        <h3 >12N tile flooring</h3>
+                        <motion.h3 
+                        custom={8}
+                        variants={animation}
+                        >12N tile flooring</motion.h3>
                         </div>
                     </div>
-                    <img src="./img/descript/5_632d24ee-055f-4b9a-bfea-d4a87f829eae_2400x.webp" alt="" />
-                </div>
+                    <motion.img 
+                     src="./img/descript/5_632d24ee-055f-4b9a-bfea-d4a87f829eae_2400x.webp" alt="" />
+                </motion.div>
             <div className='goods_item video_block '>
                 <h3>Freo vs. Other Robot</h3>
                 <video 
@@ -129,7 +200,7 @@ const DescriptionGoods = () => {
             </div>
             <a href="https://shop.narwal.com/products/narwal-freo"><button >Buy now</button></a>
 
-        </motion.div>
+        </div>
     );
 };
 
