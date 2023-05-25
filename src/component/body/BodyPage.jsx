@@ -1,12 +1,29 @@
-import React from 'react';
+import React, {useState, useEffect}  from 'react';
 import ImgGoodsBanner from './ImgGoodsBanner';
 import DescriptionGoods from './DescriptionGoods';
 import Reviews from './Reviews';
+import OpenImg from './OpenImg';
 import '../../style/bodyPage.scss'
 
 const BodyPage = () => {
+
+    const [currentImg, setCurrentImg] = useState('./img/ban/1narwalt10-narwal-robot-113000_1200x1200.webp')
+    const [isOpen, setIsOpen] = useState(false)
+   
+    const imgArr = [
+        './img/ban/1narwalt10-narwal-robot-113000_1200x1200.webp',
+        './img/ban/2narwalt10-narwal-robot-951644_1200x1200.webp',
+        './img/ban/3narwalt10-narwal-robot-369086_1200x1200.webp',
+        './img/ban/4narwalt10-narwal-robot-140190_1200x1200.webp',
+        './img/ban/5narwalt10-narwal-robot-627269_1200x1200.webp',
+    ]
+
     return (
         <div className='body_wrap'>
+            {/* {isOpen &&
+            <OpenImg
+            currentImg={currentImg}
+            />} */}
             <div className='head_goods'>
             <div className='body_wrap_item block_sell'>
                 <title>
@@ -20,7 +37,13 @@ const BodyPage = () => {
             </div>
             <div className='body_wrap_item block_buy'>
                 <div className='banner_wrap'>
-                    <ImgGoodsBanner/>
+                    <ImgGoodsBanner
+                    imgArr = {imgArr}
+                    isOpen={isOpen}
+                    setIsOpen={setIsOpen}
+                    currentImg = {currentImg}
+                    setCurrentImg = {setCurrentImg}
+                    />
                     <ul className='descript'>
                                 <li><img src="./img/ico/DirtSense.webp" alt="" /><p>DirtSense</p></li>
                                 <li><img src="./img/ico/AutoFeed.webp" alt="" /><p>Auto Feed*</p></li>
