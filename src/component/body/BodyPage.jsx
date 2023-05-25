@@ -83,7 +83,7 @@ const BodyPage = () => {
                                 <li><img src="./img/ico/help.webp" alt="" /><p>Free logistics delivery</p></li>
                             </ul>
                     </div>
-                    <a href="https://shop.narwal.com/products/narwal-freo"><button >Buy now</button></a>
+                    <a href="#"><button >Buy now</button></a>
                 </div>    
             </div>
 

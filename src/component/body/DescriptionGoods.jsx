@@ -101,7 +101,7 @@ const DescriptionGoods = () => {
                 </div>
                 <img src="./img/descript/3_f3da15bc-6a56-44e5-a324-677e53dad667_2400x.webp" alt="" />
             </motion.div>
-            <a href="https://shop.narwal.com/products/narwal-freo"><button >Buy now</button></a>
+            <a href="#"><button >Buy now</button></a>
             <motion.div
             initial="hidden"
             whileInView="visible"
@@ -136,12 +136,12 @@ const DescriptionGoods = () => {
                 <div className='goods_tittle pos_absolute mod '>
                         <div className='block_left'>
                         <motion.h3
-                        // custom={3}
-                        // variants={animation}
+                        custom={3}
+                        variants={animation}
                         className=''>Flooring Identification</motion.h3>
                         <motion.p
-                        // custom={5}
-                        // variants={animation}
+                        custom={5}
+                        variants={animation}
                         className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</motion.p>
                         </div>
                         <div className='block_right'>
@@ -198,7 +198,7 @@ const DescriptionGoods = () => {
                 <h3 className='pos_absolute'>What's in the Box</h3>
                 <img src="./img/descript/0915-_-PC_1920x.webp" alt="" />
             </div>
-            <a href="https://shop.narwal.com/products/narwal-freo"><button >Buy now</button></a>
+            <a href="#"><button >Buy now</button></a>
 
         </div>
     );
