@@ -30,7 +30,9 @@ const BodyPage = () => {
                     <h2 className='title_first'>Birthday Sale</h2>
                 <p>Our shop is 5 years old! In honor of this, we have prepared a gift. Wee have prepared 50 vacuum cleaners for the price of only 2E! One person can only buy one vacuum cleaner.</p>
                 <a href="#" className='left'>More</a>
-                <a href="#"><button>Buy Now</button></a>
+                {/* <div className='logo' style={{height: '50px', margin: "10px 0"}}>
+                    <img src="./img/Narwal_logo_6184fd7a-f19a-4c3f-889c-20a94e4326b0_130x.webp" alt=""  />
+                </div> */}
                 </title>
                 {/* <img src=".\img\block_sell.png" alt="" /> */}
                 
