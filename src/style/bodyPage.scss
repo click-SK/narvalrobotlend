@@ -24,11 +24,14 @@
   .block_sell{
     display: flex;
     width: 80%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $color_text_disab;
+    justify-content: center;
     title{
         display: flex;
         flex: 0 auto;
-        width: 60%;
+        width: 80%;
         flex-direction: column;
         justify-content: center;
         .title_first{
@@ -53,10 +56,11 @@
                 width: 50%;
                 height: 50px;
                 border-radius: 50px;
-                background: #fff;
-                border: 1px solid $color_text_disab;
+                background: #b68bf2;
+                border: 1px solid #bd8bff;
                 transition: all 0.4s ease-in-out;
-                color: $color_text;
+                color: #fff;
+                box-shadow: inset 0px 1px 15px 13px rgba(82, 82, 82, 0.12), inset 0px 17px 21px rgba(255, 255, 255, 0.44);
                 &:hover{
                     border: 1px solid $color_prime;
                     color: $color_prime;
@@ -147,10 +151,11 @@
         width: 100%;
         height: 50px;
         border-radius: 50px;
-        background: #fff;
-        border: 1px solid $color_text_disab;
+        background: #b68bf2;
+        border: 1px solid #bd8bff;
         transition: all 0.4s ease-in-out;
-        color: $color_text;
+        color: #fff;
+        box-shadow: inset 0px 1px 15px 13px rgba(82, 82, 82, 0.12), inset 0px 17px 21px rgba(255, 255, 255, 0.44);
         &:hover{
             border: 1px solid $color_prime;
             color: $color_prime;
@@ -209,13 +214,43 @@
     .price_title{
         font-family: 'HarmonyOS_Sans', sans-serif;
         color: $color_text_disab;
+        margin-bottom: 30px;
         
     }
 
+
+
     .price{
         font-family: 'HarmonyOS_Sans', sans-serif;
-        font-size: 24px;
+        font-size: 34px;
         margin-top: 10px;
+
+    }
+
+    .price_old{
+        font-size: 24px;
+        color: rgb(97, 97, 97);
+        font-weight: 500;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 118px;
+            rotate: -10deg;
+            height: 3px;
+            border-radius: 20px;
+            background: #fc0404dc;
+            left: -5px;
+            top: 40%;
+            z-index: 100;
+        }
+    }
+
+    .price_new{
+
+        color: $color_prime;
+        font-weight: 700;
+
     }
 }
 
@@ -286,12 +321,39 @@
             
         }
       }
-    .title_price_wrap{
+
+      .title_price_wrap {
         padding: 0 20px;
-        h1{
-            font-size: 30px;
-        }
     }
+
+        .price_wrap{
+
+            
+            .price_title{
+
+                
+            }
+        
+            .price{
+        
+            }
+            .price_old{
+
+                &::before{
+                    left: -5px;
+                    top: 62%;
+
+                }
+            }
+        
+            .price_new{
+                padding-top: 30px;
+                color: $color_prime;
+                font-weight: 700;
+        
+            }
+        }
+    
 
     .second_photo{
         img{
@@ -434,7 +496,8 @@
 
 @media (max-width: 600px){
     .block_sell{
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
+
     }
     .block_buy {
         flex-direction: column;
@@ -491,11 +554,19 @@
 
     .price_wrap{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        .price_title{
+            padding-bottom: 20px;
+        }
         .price{
             margin: 0;
-            padding: 0;
+            padding: 10px 0 0 0;
+        }
+        .price_new{
+            margin: 10px 0;
+            padding: 10px 0 0 0;
         }
     }
     .pay {
@@ -578,7 +649,17 @@
     .pay_deliv .delivery {
 
     }
+    .pay_deliv {
+        .delivery {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+
+
+    }
 }
+
 
 @media (max-width: 350px){
     .block_sell{
@@ -594,4 +675,16 @@
             }
         }
     }
+
+    .title_price_wrap {
+        width: 95%;
+        padding-top: 20px;
+        .reviews_wrap {
+            .star{ 
+            img {
+            width: 10px;}}
+        }
+    }
+
+
 }

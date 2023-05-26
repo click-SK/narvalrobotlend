@@ -19,22 +19,34 @@ const DescriptionGoods = () => {
             },
         })
     }
-    // const animationImg={
-    //     hidden: {
-    //         opacity: 0,
-    //     },
-    //     visible: {
-    //         opacity: 1,
-    //     }
-    // }
-    // const animationImg2={
-    //     hidden: {
-    //         opacity: 1,
-    //     },
-    //     visible: {
-    //         opacity: 0,
-    //     }
-    // }
+    const animationImg={
+        hidden: {
+            x:-50,
+            opacity: 0,
+        },
+        visible:custom =>({
+            x:0,
+            opacity: 1,
+            transition:{ 
+                delay: custom * 0.2,
+                duration: 0.5
+            },
+        })
+    }
+    const animationImg2={
+        hidden: {
+            x:+50,
+            opacity: 0,
+        },
+        visible:custom =>({
+            x:0,
+            opacity: 1,
+            transition:{ 
+                delay: custom * 0.2,
+                duration: 0.5
+            },
+        })
+    }
 
 
     return (
@@ -52,18 +64,22 @@ const DescriptionGoods = () => {
             className='goods_item first_block'>
                 <div className='goods_tittle'>
                 <motion.h3
-                    custom={3}
+                    custom={4}
                     variants={animation}
+                    
                 >
                     You are all set. Freo a clean day.
                 </motion.h3>
                 <motion.p
-                custom={5}
+                custom={6}
                 variants={animation}
                 >The brand-new versatile cleaning robot
                     innovated by Narwal.</motion.p>
                 </div>
-                <img src="./img/descript/1_e1aa879b-bf30-47a3-be0e-2f9f0ea1159e_2400x.webp" alt="" />
+                <motion.img
+                custom={2}
+                variants={animationImg}
+                src="./img/descript/1_e1aa879b-bf30-47a3-be0e-2f9f0ea1159e_2400x.webp" alt="" />
             </motion.div>
             <motion.div 
             initial="hidden"
@@ -72,16 +88,19 @@ const DescriptionGoods = () => {
             className='goods_item second_block '>
                 <div className='goods_tittle'>
                 <motion.h3
-                custom={3}
+                custom={4}
                 variants={animation}
                 >Self Detect Self Clean</motion.h3>
                 <motion.p
-                 custom={5}
+                 custom={6}
                  variants={animation}
                  className='p_block_two'
                  >Freo intelligently detects how dirty the mops are and sanitizes them in a high-speed spinning, using the exact amount of water mixed with the scientifically designated ratio of Narwal's exclusive formulated floor cleaner. </motion.p>
                 </div>
-                <img src="./img/descript/2_d1979953-d687-4b52-82db-0e001fcd12c2_2400x.webp" alt="" />
+                <motion.img
+                custom={2}
+                variants={animationImg2} 
+                src="./img/descript/2_d1979953-d687-4b52-82db-0e001fcd12c2_2400x.webp" alt="" />
             </motion.div>
             <motion.div
             initial="hidden"
@@ -99,7 +118,10 @@ const DescriptionGoods = () => {
                 variants={animation}
                  className='p_block_two'>The latest DirtSense* technology allows Freo to sense "how dirty your room is", and then determine "clean one more time or not" until Freo rinses the ground thoroughly.</motion.p>
                 </div>
-                <img src="./img/descript/3_f3da15bc-6a56-44e5-a324-677e53dad667_2400x.webp" alt="" />
+                <motion.img
+                    custom={2}
+                    variants={animationImg} 
+                        src="./img/descript/3_f3da15bc-6a56-44e5-a324-677e53dad667_2400x.webp" alt="" />
             </motion.div>
             <a href="#"><button >Buy now</button></a>
             <motion.div

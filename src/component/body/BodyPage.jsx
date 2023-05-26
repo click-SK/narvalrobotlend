@@ -32,7 +32,7 @@ const BodyPage = () => {
                 <a href="#" className='left'>More</a>
                 <a href="#"><button>Buy Now</button></a>
                 </title>
-                <img src=".\img\block_sell.png" alt="" />
+                {/* <img src=".\img\block_sell.png" alt="" /> */}
                 
             </div>
             <div className='body_wrap_item block_buy'>
@@ -70,7 +70,8 @@ const BodyPage = () => {
                     </div>
                     <div className='price_wrap'>
                         <div className='price_title'>Vacuum & Mop Integration. Mop Lifting. Freo Mode.</div>
-                        <div className='price'>$1,299.00</div>
+                        <div className='price price_old'>$5,000.00</div>
+                        <div className='price price_new'>$1,299.00</div>
                     </div>
                     <div className='pay_deliv'>
                             <div className='pay'>

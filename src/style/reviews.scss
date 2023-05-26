@@ -21,6 +21,7 @@
         font-family: 'HarmonyOS_Sans', sans-serif;  
         font-size: 40px;
         padding: 20px 50px;
+        color: $color_prime;
     }
 }
 
@@ -172,6 +173,13 @@
 
 
 @media (max-width: 680px){
+    .footer_wrap{ 
+        padding: 0;   
+    .link_policy {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }}
 
 }
 
@@ -189,4 +197,19 @@
             margin-right: 20px;
         }
     }
+
+    .reviews_section{
+        padding: 0;
+        h2{
+           font-size: 30px;
+
+        }
+    }
+
+    .title_rev{
+        .name_wrap{
+        .name{
+            font-size: 20px;
+        }
+    }}
 }

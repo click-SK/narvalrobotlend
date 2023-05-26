@@ -39,13 +39,13 @@ const Footer = () => {
             
             <h2>Policy</h2>
             <div className='link_policy'>
-            <a href="https://shop.narwal.com/pages/pre-order-terms-and-conditions">Pre-order Terms and Conditions</a>
-            <a href="https://shop.narwal.com/pages/after-sales-policy">Return & Refund Policy</a>
-            <a href="https://shop.narwal.com/pages/shipping">Shipping & Delivery</a>
-            <a href="https://shop.narwal.com/pages/narwal-privacy-policy">Privacy Policy</a>
-            <a href="https://shop.narwal.com/pages/narwal-cookie-policy">Cookie Policy</a>
-            <a href="https://shop.narwal.com/pages/narwal-terms-and-conditions-of-website-and-purchases">Billing Terms and Conditions</a>
-            <a href="https://shop.narwal.com/pages/warranty-policy">Warranty Policy</a>
+            <a href="./policy/Pre-order Terms and Conditions.docx">Pre-order Terms and Conditions</a>
+            <a href="./policy/Return & Refund Policy.docx">Return & Refund Policy</a>
+            <a href="./policy/Shipping & Delivery.docx">Shipping & Delivery</a>
+            <a href="./policy/Privacy Policy.docx">Privacy Policy</a>
+            <a href="./policy/Cookie Policy.docx">Cookie Policy</a>
+            <a href="./policy/Billing Terms and Conditions.docx">Billing Terms and Conditions</a>
+            <a href="./policy/Warranty Policy.docx">Warranty Policy</a>
             </div>
             
         </div>
